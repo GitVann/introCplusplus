@@ -1,0 +1,10 @@
+// cout class with iostream
+// cout use more memory than puts or printf because it uses a lot of STL library
+
+#include<iostream>
+using namespace std;
+
+int main(int argc, char**argv) {
+    cout << "Hello " << 10 * 10 <<" end "<<endl;
+     return 0;    
+}

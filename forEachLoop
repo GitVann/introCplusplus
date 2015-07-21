@@ -1,0 +1,25 @@
+// C++ 11 range-based for loop or for each loop
+
+#include<cstdio>
+using namespace std;
+#include <string> // for STL string
+
+int main(int argc, char**argv) {
+     int a[] = {1,2,3,4,5};
+     for( int i : a) {
+         printf("element is %d\n", i);
+     }
+     
+     char s[] = "string1";
+     for(char c1 : s) {
+        if(c1==0) break; // removes last "element is" 
+        printf("element is %c\n", c1);
+     }
+     
+     // STL String does not requires if(c1==0) break;
+     string s1 = "ABC";
+     for(char c : s1) {
+        printf("element is %c\n", c); 
+     }
+     return 0;    
+}

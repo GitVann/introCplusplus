@@ -1,0 +1,12 @@
+// forLoop
+
+#include<cstdio>
+using namespace std;
+
+int main(int argc, char**argv) {
+    char s[] = "String12";
+    for (char * cp = s; *cp; ++cp) {
+        printf("element %c\n", *cp);
+    }
+    return 0;
+}

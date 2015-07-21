@@ -1,0 +1,30 @@
+// the branch conditional
+
+#include<cstdio>
+using namespace std;
+
+int main(int argc, char**argv) {
+   const int one = 1;
+   const int two = 2;
+   const int three = 3;
+   const int four = 4;
+   
+   int x = 4; // x = 4 is case 4
+   
+   switch(x) {
+        case one:
+             puts("one1");
+             break;
+        case two:
+             puts("two2");
+             break;
+        case three:
+             puts("three3");
+             break;
+        case four:
+             puts("four4");
+             break;
+        default:
+            break;
+    }
+}

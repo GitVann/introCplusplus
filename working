@@ -1,0 +1,14 @@
+#include<cstdio>
+using namespace std;
+
+int main(int argc, char**argv) {
+   int x = 5;
+   int y = 4;
+   if(x<y) {
+       puts("Condition is true;");
+    } else {
+        puts("Condtion is false;");       
+    }
+    return 0;   
+
+}

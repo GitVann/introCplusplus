@@ -1,4 +1,5 @@
 //Passing value to a function by pointer
+//Less efficient than passing by reference and can causes stack overflow leading to security vulunerability
 #include<cstdio>
 #include<string>
 using namespace std;

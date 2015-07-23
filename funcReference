@@ -1,0 +1,15 @@
+// Passing value by refernce is more secure and efficient than pointer
+#include<cstdio>
+#include<string>
+using namespace std;
+
+void func(const string & s){
+    printf("value is, %s\n", s.c_str());
+}
+
+int main (int argc, char ** argv) {
+    string b = "this this string b";
+    func(b);
+    printf("string is %s\n", b.c_str());
+    return 0;
+}    

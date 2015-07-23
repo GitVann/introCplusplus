@@ -1,0 +1,15 @@
+// Using function pointers
+#include <cstdio>
+using namespace std;
+
+void func() {
+    puts("this is func()");    
+}
+
+int main(int argc, char ** argv) {
+    void (*fp)() = func;
+    puts("This is main");
+    fp(); // this or the one below to call function pointer
+    (*fp)();
+    return 0;
+}

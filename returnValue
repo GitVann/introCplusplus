@@ -1,0 +1,15 @@
+// Returning a value from function
+// Only return by value when the object is small
+#include<cstdio>
+using namespace std;
+
+int func(int i) {
+    puts("this is func()");
+    return i * 2;
+}
+
+int main(int argc, char ** argv) {
+   puts("this is main()");
+   printf("Returned value: %d\n", func(42));
+   return 0;
+}

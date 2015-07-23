@@ -1,0 +1,13 @@
+// defining a function
+#include <cstdio>
+using namespace std;
+
+void function() {
+    puts("this is a function() ");
+}
+
+int main(int argc, char ** argv) {
+    puts("this is main()");
+    function();
+    return 0;
+}

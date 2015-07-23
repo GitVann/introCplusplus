@@ -1,0 +1,16 @@
+// Returning a string by reference
+// Retern by reference when object is large
+#include<cstdio>
+#include<string>
+using namespace std;
+
+const string & func() {
+    static string s = "This is a static string";
+    return s;
+}
+
+int main(int argc, char ** argv) {
+   puts("this is main()");
+   printf("Returned value: %s\n", func().c_str());
+   return 0;
+}

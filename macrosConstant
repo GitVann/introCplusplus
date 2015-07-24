@@ -1,0 +1,21 @@
+// preprocessor: using macro as constant
+
+
+#include<cstdio>
+using namespace std;
+
+#define TWO 2  // pre-processor directive
+#define SAY_HI "Hi there"
+
+int main(int argc, char ** argv) 
+{
+    printf("The value is %d\n", TWO);
+    printf("The string is %s\n", SAY_HI);
+    
+    // const will bee seen by debuger, 
+    //it shows on symbole table,
+    //get its address and use a pointer
+    const int one = 1;
+    printf("The constant is %d\n", one);
+    return 0;
+}

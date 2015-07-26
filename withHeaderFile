@@ -7,6 +7,7 @@ int main(int argc, char ** argv) {
     
     printf("preprocessor macro: %d\n", ONE);
     printf("integer constant: %d\n", _iOne);
+    printf("character string constant: %s\n", _sOne);
     return 0;
 }
 

@@ -1,0 +1,25 @@
+#include<cstdio>
+using namespace std;
+
+class A{
+    int ia;
+public:
+    void setvalue(const int a);//{ia = a;} without setvalue function 
+    int getvalue();// const after parentheses //{ return ia;} without getvalue function
+};
+
+void A::setvalue(const int a){
+    ia = a;
+}
+
+int A::getvalue(){ // const after parentheses
+    return ia;
+}
+
+int main(int argc, char ** argv) {
+    A a;
+    // const A b=a;  // use this but must declare const safe on above sig.
+    a.setvalue(42);
+    printf("Value is %d\n", a.getvalue());// with const b.getvalue()
+    return 0;
+}

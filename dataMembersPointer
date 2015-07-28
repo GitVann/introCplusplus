@@ -1,0 +1,19 @@
+// Data memebers with pointer
+
+
+#include<cstdio>
+using namespace std;
+
+struct A{
+public: // struct default is public, if privat: then main class will not be able to access it
+    int ia;
+    int ib;
+    int ic;
+};
+
+int main(int argc, char ** argv){
+    A a = {1, 2, 3};
+    A *pa = &a;
+    printf("ia is %d, ib is %d, ic is %d\n", pa->ia, pa->ib, pa->ic);
+    return 0;
+}    

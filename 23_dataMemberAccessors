@@ -1,4 +1,6 @@
 // Accessors
+// use struct when struct only has data members
+// use class when they are all function members
 
 #include<cstdio>
 #include<string>

@@ -5,7 +5,8 @@
 using namespace std;
 
 struct A{
-public: // struct default is public, if privat: then main class will not be able to access it
+public: // struct default is public, class is default to private. if struct is privat: then main class will not be able to access it
+        // 
     int ia;
     int ib;
     int ic;

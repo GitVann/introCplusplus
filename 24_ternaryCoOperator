@@ -1,0 +1,12 @@
+// ternary condiational operator
+// shorter than if else construct
+
+#include<cstdio>
+using namespace std;
+
+int main(int argc, char ** argv){
+    int x = 1;
+    int y = 2;
+    printf("Is x is greater than y? %s\n", x > y ? "Yes" : "No");
+    return 0;
+}    
